@@ -30,4 +30,10 @@ modeling -> random_forest -> n_estimators to 10 and etl->min_price to 50:
   -P steps=download,basic_cleaning \
   -P hydra_options="modeling.random_forest.n_estimators=10 etl.min_price=50"
 ```
+### Run from github
 
+```shell
+mlflow run https://github.com/Gunnvant/modelling_pipeline.git \
+             -v  \
+             -P hydra_options="etl.sample='sample2.csv'"
+```
