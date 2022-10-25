@@ -14,24 +14,24 @@ entry_points:
         type: string
 
       output_artifact:
-        description: output artifact (*csv file) - cleaned
+        description: output artifact (*csv file) - after cleaning
         type: string
 
-      output_type:
-        description: artifact type
+      output_type: 
+        description: type of artifact (in this case its a flat file)
         type: string
       
       output_description:
-        description: artifact description
+        description: output artifact description
         type: string
         
       min_price:
-        description: Minimum accepted price
-        type: string
+        description: the minimum price - outlier left (min.) boundary
+        type: float
       
       max_price:
-        description: Maximum accepted price
-        type: string
+        description: the maximum price - outlier right (max.) boundary
+        type: float
       
 
     command: >-
