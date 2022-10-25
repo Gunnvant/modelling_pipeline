@@ -34,6 +34,10 @@ modeling -> random_forest -> n_estimators to 10 and etl->min_price to 50:
 
 ```shell
 mlflow run https://github.com/Gunnvant/modelling_pipeline.git \
-             -v  \
+             -v 1.0.1 \
              -P hydra_options="etl.sample='sample2.csv'"
 ```
+
+### W&B Project Link
+
+https://wandb.ai/gunnvant/nyc_airbnb?workspace=user-gunnvant
